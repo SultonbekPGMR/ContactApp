@@ -97,8 +97,7 @@ class ViewUser : Fragment() {
                 tvLetter.slideUp(300)
                 tvName.slideUp(300)
             }
-        }, 50)
-
+        }, 45)
 
         /** getting clipBoardManager */
         val myClipboard: ClipboardManager =
