@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.contactpermission.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewUser"
+            app:destination="@id/viewUser" />
+        <action
+            android:id="@+id/action_homeFragment_to_sendSms"
+            app:destination="@id/sendSms" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.contactpermission.fragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/viewUser"
+        android:name="com.example.contactpermission.fragments.ViewUser"
+        android:label="fragment_view_user"
+        tools:layout="@layout/fragment_view_user" />
+    <fragment
+        android:id="@+id/sendSms"
+        android:name="com.example.contactpermission.fragments.SendSms"
+        android:label="fragment_send_sms"
+        tools:layout="@layout/fragment_send_sms" />
+</navigation>
